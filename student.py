@@ -7,11 +7,12 @@ pares = []
 for i in numeros[-2::-2]:
   if 2*int(i)<10:
     pares.append(2*int(i)-10+1)
-    soma = sum(pares)+sum(impares)
-    if int(soma/10) == soma/10:
-      print("Cartão válido")
-    else:
-      print("Cartão inválido")
+    
+soma = sum(pares)+sum(impares)
+if int(soma/10) == soma/10:
+    print("Cartão válido")
+else:
+    print("Cartão inválido")
       
 # TODO: implemente a verificação pelo algoritmo de Luhn
 # Siga as dicas do README.
